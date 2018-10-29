@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="grmi_pool">
+    <static>true</static>
+    <link name="link">
+      <collision name="grmi_pool">
+        <pose>0 0 -1.5 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://GRMI_pool/meshes/GRMI_pool_collision.dae</uri>
+            <scale>1.0 1.0 1.0</scale>
+          </mesh>
+        </geometry>
+      </collision>
+
+      <visual name="grmi_pool">
+        <cast_shadows>true</cast_shadows>
+        <pose>0 0 -1.5 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://GRMI_pool/meshes/GRMI_pool.dae</uri>
+            <scale>1.0 1.0 1.0</scale>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>
