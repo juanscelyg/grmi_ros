@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <world name="GRMI ekf test">
+  <!-- A global light source -->
+      <include>
+        <uri>model://sun</uri>
+      </include>
+
+    <include>
+      <uri>model://Aruco</uri>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+  </world>
+</sdf>

@@ -1,0 +1,29 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+  <model name='Aruco'>
+  <link name="Aruco">
+    <collision name="solido">
+      <pose>1.0 1.0 0.05 0 0 3.141592</pose>
+      <geometry>
+        <mesh>
+          <uri>model://Aruco/meshes/model.dae</uri>
+          <scale>1.0 1.0 1.0</scale>
+        </mesh>
+      </geometry>
+    </collision>
+
+    <visual name="solido">
+      <cast_shadows>true</cast_shadows>
+      <pose>1.0 1.0 0.05 0 0 3.141592</pose>
+      <geometry>
+        <mesh>
+          <uri>model://Aruco/meshes/model.dae</uri>
+          <scale>1.0 1.0 1.0</scale>
+        </mesh>
+      </geometry>
+    </visual>
+  </link>
+    <static>1</static>
+    <allow_auto_disable>1</allow_auto_disable>
+  </model>
+</sdf>
