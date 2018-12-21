@@ -1,0 +1,71 @@
+material Aruco/Marker10
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.5 0.5 0.5 1.0
+      diffuse 1.0 1.0 1.0 1.0
+      specular 0.0 0.0 0.0 1.0 0.5
+      texture_unit
+      {
+        texture 4x4_1000-10.png
+        filtering trilinear
+      }
+    }
+  }
+}
+
+material Aruco/Marker11
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.5 0.5 0.5 1.0
+      diffuse 1.0 1.0 1.0 1.0
+      specular 0.0 0.0 0.0 1.0 0.5
+      texture_unit
+      {
+        texture 4x4_1000-11.png
+        filtering trilinear
+      }
+    }
+  }
+}
+
+material Aruco/Marker12
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.5 0.5 0.5 1.0
+      diffuse 1.0 1.0 1.0 1.0
+      specular 0.0 0.0 0.0 1.0 0.5
+      texture_unit
+      {
+        texture 4x4_1000-12.png
+        filtering trilinear
+      }
+    }
+  }
+}
+
+material Aruco/Marker13
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.5 0.5 0.5 1.0
+      diffuse 1.0 1.0 1.0 1.0
+      specular 0.0 0.0 0.0 1.0 0.5
+      texture_unit
+      {
+        texture 4x4_1000-13.png
+        filtering trilinear
+      }
+    }
+  }
+}
