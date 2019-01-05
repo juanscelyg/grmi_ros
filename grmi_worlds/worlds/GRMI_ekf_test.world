@@ -8,22 +8,22 @@
 
     <include>
       <uri>model://Marker_10</uri>
-      <pose>0 1 0.2 1.57 0 0</pose>
+      <pose>0 1 0.1 1.57 0 0</pose>
     </include>
 
     <include>
       <uri>model://Marker_11</uri>
-      <pose>1 0 0.2 1.57 0 -1.57</pose>
+      <pose>1 0 0.1 1.57 0 -1.57</pose>
     </include>
 
     <include>
       <uri>model://Marker_12</uri>
-      <pose>0 -1 0.2 1.57 0 3.141592</pose>
+      <pose>0 -1 0.1 1.57 0 3.141592</pose>
     </include>
 
     <include>
       <uri>model://Marker_13</uri>
-      <pose>-1 0 0.2 1.57 0 1.57</pose>
+      <pose>-1 0 0.1 1.57 0 1.57</pose>
     </include>
 
     <include>
