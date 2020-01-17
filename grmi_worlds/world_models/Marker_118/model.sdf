@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<sdf version="1.4">
+<model name="Aruco">
+  <static>true</static>
+    <link name="link">
+      <visual name="visual">
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>0.15 0.15</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://Media/materials/scripts/aruco.material</uri>
+            <name>Aruco/Marker118</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

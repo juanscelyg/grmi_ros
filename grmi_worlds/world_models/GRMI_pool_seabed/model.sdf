@@ -4,7 +4,7 @@
     <static>true</static>
     <link name="seabed">
       <collision name="seabed">
-        <pose>0 0 -1.75 0 0 0</pose>
+        <pose>0 0 -2.10 0 0 0</pose>
         <geometry>
           <mesh>
             <uri>model://GRMI_pool_seabed/meshes/suelo.dae</uri>
@@ -15,7 +15,7 @@
 
       <visual name="seabed">
         <cast_shadows>true</cast_shadows>
-        <pose>0 0 -1.75 0 0 0</pose>
+        <pose>0 0 -2.10 0 0 0</pose>
         <geometry>
           <mesh>
             <uri>model://GRMI_pool_seabed/meshes/suelo.dae</uri>
@@ -30,10 +30,10 @@
         <pose>0 0 0 0 0 0</pose>
         <cast_shadows>false</cast_shadows>
         <geometry>
-          <box>                        
+          <box>
             <size>4.3 2 0.01</size>
           </box>
-        </geometry>                
+        </geometry>
         <material>
           <script>
             <uri>file://Media/materials/scripts/water.material</uri>
@@ -43,12 +43,12 @@
       </visual>
 
       <visual name="bottom">
-        <pose>0 0 -1.5 0 0 0</pose>
+        <pose>0 0 -2.0 0 0 0</pose>
         <geometry>
-          <box>                        
+          <box>
             <size>4.3 2 0.01</size>
           </box>
-        </geometry>                
+        </geometry>
         <material>
           <script>
             <uri>file://Media/materials/scripts/water.material</uri>
@@ -58,12 +58,12 @@
       </visual>
 
       <visual name="north_wall">
-        <pose>0 0.98 -0.75 0 0 0</pose>
+        <pose>0 0.98 -1.0 0 0 0</pose>
         <geometry>
-          <box>                        
-            <size>4.3 0.01 1.5</size>
+          <box>
+            <size>4.3 0.01 2.0</size>
           </box>
-        </geometry>                
+        </geometry>
         <material>
           <script>
             <uri>file://Media/materials/scripts/water.material</uri>
@@ -73,12 +73,12 @@
       </visual>
 
       <visual name="south_wall">
-        <pose>0 -1 -0.75 0 0 0</pose>
+        <pose>0 -1 -1 0 0 0</pose>
         <geometry>
-          <box>                        
-            <size>4.3 0.01 1.5</size>
+          <box>
+            <size>4.3 0.01 2.0</size>
           </box>
-        </geometry>                
+        </geometry>
         <material>
           <script>
             <uri>file://Media/materials/scripts/water.material</uri>
@@ -88,12 +88,12 @@
       </visual>
 
       <visual name="east_wall">
-        <pose>2.15 0 -0.75 0 0 0</pose>
+        <pose>2.15 0 -1.0 0 0 0</pose>
         <geometry>
-          <box>                        
-            <size>0.01 2 1.5</size>
+          <box>
+            <size>0.01 2 2</size>
           </box>
-        </geometry>                
+        </geometry>
         <material>
           <script>
             <uri>file://Media/materials/scripts/water.material</uri>
@@ -103,12 +103,12 @@
       </visual>
 
       <visual name="west_wall">
-        <pose>-2.15 0 -0.75 0 0 0</pose>
+        <pose>-2.15 0 -1.0 0 0 0</pose>
         <geometry>
-          <box>                        
-            <size>0.01 2 1.5</size>
+          <box>
+            <size>0.01 2 2</size>
           </box>
-        </geometry>                
+        </geometry>
         <material>
           <script>
             <uri>file://Media/materials/scripts/water.material</uri>
