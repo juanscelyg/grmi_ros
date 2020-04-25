@@ -1,6 +1,6 @@
 <launch>
   <arg name="paused" default="false"/>
-  <arg name="gui" default="true"/>
+  <arg name="gui" default="false"/>
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
     <arg name="world_name" value="worlds/GRMI_pool.world"/>
@@ -13,7 +13,7 @@
   </include>
 
   <include file="$(find uuv_assistants)/launch/publish_world_ned_frame.launch"/>
-  
+
   <!--node name="publish_world_models"
         pkg="uuv_assistants"
         type="publish_world_models.py"
