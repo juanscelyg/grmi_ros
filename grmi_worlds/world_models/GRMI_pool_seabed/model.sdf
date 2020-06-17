@@ -44,6 +44,7 @@
 
       <visual name="bottom">
         <pose>0 0 -2.0 0 0 0</pose>
+        <cast_shadows>false</cast_shadows>
         <geometry>
           <box>
             <size>4.3 2 0.01</size>
@@ -52,13 +53,14 @@
         <material>
           <script>
             <uri>file://Media/materials/scripts/water.material</uri>
-            <name>UUVSimulator/SeaWall</name>
+            <name>UUVSimulator/StaticWater</name>
           </script>
         </material>
       </visual>
 
       <visual name="north_wall">
         <pose>0 0.98 -1.0 0 0 0</pose>
+        <cast_shadows>false</cast_shadows>
         <geometry>
           <box>
             <size>4.3 0.01 2.0</size>
@@ -67,13 +69,14 @@
         <material>
           <script>
             <uri>file://Media/materials/scripts/water.material</uri>
-            <name>UUVSimulator/SeaWall</name>
+            <name>UUVSimulator/StaticWater</name>
           </script>
         </material>
       </visual>
 
       <visual name="south_wall">
         <pose>0 -1 -1 0 0 0</pose>
+        <cast_shadows>false</cast_shadows>
         <geometry>
           <box>
             <size>4.3 0.01 2.0</size>
@@ -82,13 +85,14 @@
         <material>
           <script>
             <uri>file://Media/materials/scripts/water.material</uri>
-            <name>UUVSimulator/SeaWall</name>
+            <name>UUVSimulator/StaticWater</name>
           </script>
         </material>
       </visual>
 
       <visual name="east_wall">
         <pose>2.15 0 -1.0 0 0 0</pose>
+        <cast_shadows>false</cast_shadows>
         <geometry>
           <box>
             <size>0.01 2 2</size>
@@ -97,13 +101,14 @@
         <material>
           <script>
             <uri>file://Media/materials/scripts/water.material</uri>
-            <name>UUVSimulator/SeaWall</name>
+            <name>UUVSimulator/StaticWater</name>
           </script>
         </material>
       </visual>
 
       <visual name="west_wall">
         <pose>-2.15 0 -1.0 0 0 0</pose>
+        <cast_shadows>false</cast_shadows>
         <geometry>
           <box>
             <size>0.01 2 2</size>
@@ -112,7 +117,7 @@
         <material>
           <script>
             <uri>file://Media/materials/scripts/water.material</uri>
-            <name>UUVSimulator/SeaWall</name>
+            <name>UUVSimulator/StaticWater</name>
           </script>
         </material>
       </visual>
