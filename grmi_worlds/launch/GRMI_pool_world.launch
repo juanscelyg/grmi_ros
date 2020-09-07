@@ -1,6 +1,8 @@
 <launch>
   <arg name="paused" default="true"/>
   <arg name="gui" default="true"/>
+  <arg name="debug" default="0"/>
+  <arg name="namespace" default="bottle"/>
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
     <arg name="world_name" value="worlds/GRMI_pool.world"/>
@@ -12,25 +14,16 @@
     <arg name="verbose" value="true" />
   </include>
 
+
+  <!-- ### BOTTLE ###  -->
+  <!-- send bootle urdf to param server -->
+  <param name="$(arg namespace)_description"  command="$(find xacro)/xacro --inorder '$(find grmi_worlds)/objects/$(arg namespace).urdf.xacro' debug:=$(arg debug) namespace:=$(arg namespace)" />
+
+  <!-- push bottle_description to factory and spawn robot in gazebo -->
+  <node name="spawn_$(arg namespace)" pkg="uuv_descriptions" type="spawn_model" respawn="false" output="screen"
+  args="-urdf -y -0.50 -z -1  -model $(arg namespace) -param $(arg namespace)_description"/>
+
+
   <include file="$(find uuv_assistants)/launch/publish_world_ned_frame.launch"/>
 
-  <!--node name="publish_world_models"
-        pkg="uuv_assistants"
-        type="publish_world_models.py"
-        output="screen">
-        <rosparam subst_value="true">
-            meshes:
-                herkules_seabed:
-                    mesh: package://grmi_worlds/Media/models/sea_surface_1000m_x_1000m.dae
-                    pose:
-                      position: [0, 0, -60]
-                    scale: [4, 4, 1]
-                herkules_ship_wreck:
-                    mesh: package://grmi_worlds/world_models/GRMI_pool/meshes/GRMI_pool.dae
-                    pose:
-                      position: [0, 0, -60]
-                    orientation: [0, 0, 1.57]
-
-        </rosparam>
-  </node-->
 </launch>

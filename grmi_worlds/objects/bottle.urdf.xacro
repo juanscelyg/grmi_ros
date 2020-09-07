@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<robot name="bottle" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+  <xacro:arg name="debug" default="0"/>
+  <xacro:arg name="namespace" default="bottle"/>
+  <!-- Include the UUV macro file -->
+  <xacro:include filename="$(find grmi_worlds)/urdf/bottle.xacro"/>
+  <!-- Create the bottle -->
+  <xacro:bottle namespace="$(arg namespace)" debug="$(arg debug)"/>
+
+</robot>

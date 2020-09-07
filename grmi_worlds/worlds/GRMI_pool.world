@@ -60,8 +60,10 @@
       <pose>0 0 0 0 0 0</pose>
     </include>
 
-    <!-- Visual Markers -->
-    <!-- north -->
+
+<!--
+    <!-/- Visual Markers -/->
+    <!-/- north -/->
     <include>
       <uri>model://Marker_114</uri>
       <pose>0.05 0.97 -1.1 1.57 0 0</pose>
@@ -87,7 +89,7 @@
       <pose>-0.75 0.97 -0.5 1.57 0 0</pose>
     </include>
 
-    <!-- east -->
+    <!-/- east -/->
     <include>
       <uri>model://Marker_101</uri>
       <pose>2.14 0.1 -0.5 1.57 0 -1.57</pose>
@@ -108,7 +110,7 @@
       <pose>2.14 0.9 -1.1 1.57 0 -1.57</pose>
     </include>
 
-    <!-- south -->
+    <!-/- south -/->
     <include>
       <uri>model://Marker_105</uri>
       <pose>0.25 -0.98 -1.1 1.57 0 3.141592</pose>
@@ -134,7 +136,7 @@
       <pose>1.05 -0.98 -0.5 1.57 0 3.141592</pose>
     </include>
 
-    <!-- west -->
+    <!-/- west -/->
     <include>
       <uri>model://Marker_110</uri>
       <pose>-2.14 -0.1 -0.5 1.57 0 1.57</pose>
@@ -154,6 +156,7 @@
       <uri>model://Marker_113</uri>
       <pose>-2.14 -0.9 -1.1 1.57 0 1.57</pose>
     </include>
+  -->
 
     <!-- Underwater currents -->
     <plugin name="underwater_current_plugin" filename="libuuv_underwater_current_ros_plugin.so">
